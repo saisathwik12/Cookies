@@ -1,0 +1,278 @@
+body{
+    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin: 0;
+    text-decoration: none;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+.head2{
+    display: flex;
+
+}
+.head2 h2{
+
+    text-decoration: underline;
+}
+.head2 *{
+    padding: 0 10px;
+}
+
+
+.grid1{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 730px;
+}
+.cookie1{
+    background-color: #fe675d;
+
+}
+
+.cookie1 img{
+
+    margin:100px;
+}
+
+.almonds{
+
+    
+    position: absolute;
+    left: -180px;
+    bottom: 0px;
+    top: -80px;
+    right: 0;
+
+}
+
+.abt-cookie{
+    margin:100px;
+
+}
+.abt-cookie h1{
+
+    font-size: 60px;
+    margin: 0;
+}
+
+.abt-cookie p{
+    margin:0 80px 0 0;
+}
+
+
+.quantity-price{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.quantity-price *{
+
+    margin: 10px 20px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.quantity-price a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-size: small;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+
+.bg1{
+
+    background-image: url(https://www.infermentum.it/_upload/_big/1713362334.0259_Il_Biscotto-Sbrisolotto_Taglio-per-sito.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.grid2{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 730px;
+    background-color: #FFF0E0;
+}
+
+
+.grid2-left{
+    margin-left: 100px;
+    padding: 30px 0;
+}
+.grid2-left h1{
+    margin: 0;
+    font-size: 50px;
+}
+
+.grid2-left td{
+    padding-right:200px;
+}
+
+.net-pack{
+
+    display: flex;
+    justify-content: start;
+
+}
+.net-pack *{
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+
+
+.grid2-right{
+    align-content: center;
+    justify-self: center;
+
+}
+
+.grid2-right:hover{
+
+    transform: translateY(-50px);
+    transition: 1s;
+}
+
+
+.block4 {
+
+    background-color: white;
+}
+
+
+.content1{
+
+    text-align: center;
+    margin-top: 100px;
+}
+
+.content1 h1{
+
+    font-size: 60px;
+    margin: 0;
+}
+.content1 span{
+    font-weight: 600;
+    padding: 80px 0;
+
+}
+
+.grid3{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(2,1fr) ;
+    justify-content: center;
+}
+
+.card1{
+    text-align: center;
+    margin: 30px 50px;
+    position: relative;
+    width: auto;
+}
+
+.bgimg{
+    transition: all .1s ease-in;
+}
+
+.fgimg{
+    opacity: 0;
+    position: absolute;
+    left: 30px;
+    transition: all .5s ease-out;
+
+}
+
+.card1:hover{
+
+    .bgimg{
+        opacity: 0;
+    }
+
+    .fgimg{
+
+        opacity: 1;
+        transform: translateY(-10%);
+    }
+}
+
+.card1 a{
+    
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    margin-left: 50px;
+    padding: 5px;
+    border-radius: 10px;
+
+    &:hover{
+
+        background-color: black;
+        color: white;
+    }
+}
+
+.grid4{
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    color: white;
+    background-color: black;
+    padding: 50px 10px;
+}
+
+.footlogo{
+    padding: 10px 0;
+    justify-self: center;
+}
+
+.google{
+
+    justify-self: center;
+    align-self: center;
+}
+
+.subscribe2{
+
+    justify-self: center;
+    margin-top: 50px;
+    font-size: x-large;
+}
+
+.subscribe1{
+
+    position: fixed;
+    top: 680px;
+    left: 10px;
+    z-index: 1000;
+    font-size: x-large;
+
+}
+
+.desserts{
+    position: fixed;
+    top: 85%;
+    left: 93%;
+}
+
