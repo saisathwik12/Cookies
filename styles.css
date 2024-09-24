@@ -19,12 +19,38 @@ body{
     display: flex;
 
 }
-.head2 h2{
+.head2 a{
 
     text-decoration: underline;
+    color: black;
+    font-size: x-large;
+    font-weight: 600;
 }
 .head2 *{
     padding: 0 10px;
+}
+
+.en-dropdown{
+    display: none;
+    position: absolute;
+    top: 70%;
+    right: 4%;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 3020;
+}
+.en-dropdown a{
+
+    text-decoration: none;
+    display: block;
+    color: black;
+    &:hover{
+        background-color: rgb(234, 234, 234);
+    }
+}
+.en:hover .en-dropdown{
+    display: flex;
+
 }
 
 
@@ -35,7 +61,7 @@ body{
     grid-template-rows: 730px;
 }
 .cookie1{
-    background-color: #fe675d;
+    background-color: #fe675d;;
 
 }
 
@@ -44,9 +70,7 @@ body{
     margin:100px;
 }
 
-.almonds{
-
-    
+.almonds{ 
     position: absolute;
     left: -180px;
     bottom: 0px;
@@ -57,6 +81,7 @@ body{
 
 .abt-cookie{
     margin:100px;
+    
 
 }
 .abt-cookie h1{
@@ -265,7 +290,7 @@ body{
     position: fixed;
     top: 680px;
     left: 10px;
-    z-index: 1000;
+    z-index: 3010;
     font-size: x-large;
 
 }
@@ -276,3 +301,47 @@ body{
     left: 93%;
 }
 
+
+@media(max-width:780px){
+
+    .grid1{
+
+        grid-template-columns: auto;
+    }
+
+    .grid2{
+        grid-template-columns: 50%;
+        grid-template-rows: 1fr,1fr;
+    }
+    .grid3{
+        grid-template-columns: auto;
+    }
+
+    .grid4{
+        grid-template-columns: auto;
+    }
+
+    .head2{
+        display: none;
+        flex-direction: column;
+
+        position: absolute;
+        top: 50%;
+        right: 60%;
+        z-index: 30;
+        background-color: #fccecb;
+        border-radius: 10%;
+        padding: 10px;
+        
+    }
+
+    .cookieimg:hover+.head2{
+        display: flex;
+    }
+
+}
+
+.cookieimg{
+    height: 100px;
+    z-index: 100;
+}
